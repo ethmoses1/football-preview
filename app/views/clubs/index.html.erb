@@ -2,5 +2,7 @@
 
 <% @clubs.each do |club| %>
 <p> <%= club.name %></p>
+<% if club.image.present? %>
 <p><%= link_to image_tag(club.image, :class => 'thumb', :alt => club.name), club %></p>
+ <% end %>
 <% end %>

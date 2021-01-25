@@ -7,6 +7,7 @@ class CreateEmployees < ActiveRecord::Migration[5.2]
       t.text :duty
       t.text :country_of_birth
       t.text :image
+      t.integer :club_id
       # t.text :manager_id
       # t.references :manager, foreign_key: { to_table: :employees }
     end

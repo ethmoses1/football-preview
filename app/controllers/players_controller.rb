@@ -9,5 +9,7 @@ class PlayersController < ApplicationController
   end
 
   def show
+    @players = Player.all
+    @player = Player.find params[:id]
   end
 end

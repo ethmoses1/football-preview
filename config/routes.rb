@@ -15,5 +15,11 @@ Rails.application.routes.draw do
   # get 'players/new'
   # get 'players/edit'
   # get 'players/show'
+  root :to => 'clubs#index'
   resources :clubs
+  resources :players
+  resources :users, :only => [:new, :create]
+
+  
+
 end

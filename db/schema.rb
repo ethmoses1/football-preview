@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_24_072529) do
+ActiveRecord::Schema.define(version: 2021_01_25_073136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,13 +22,18 @@ ActiveRecord::Schema.define(version: 2021_01_24_072529) do
     t.text "image"
   end
 
+  create_table "clubs_users", id: false, force: :cascade do |t|
+    t.integer "club_id"
+    t.integer "user_id"
+  end
+
   create_table "employees", force: :cascade do |t|
     t.text "name"
     t.text "birth"
     t.text "duty"
     t.text "country_of_birth"
     t.text "image"
-    t.text "manager_id"
+    t.integer "club_id"
   end
 
   create_table "players", force: :cascade do |t|
@@ -41,6 +46,7 @@ ActiveRecord::Schema.define(version: 2021_01_24_072529) do
     t.text "contract_start"
     t.text "contract_end"
     t.text "image"
+    t.integer "club_id"
   end
 
   create_table "users", force: :cascade do |t|

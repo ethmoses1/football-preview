@@ -1,4 +1,4 @@
 class Player < ApplicationRecord
-  # belongs_to :clubs
-  # has_many :managers, through: :clubs
+  belongs_to :club
+  has_many :employees, through: :club
  end

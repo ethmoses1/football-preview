@@ -10,6 +10,7 @@ class CreatePlayers < ActiveRecord::Migration[5.2]
       t.text :contract_start
       t.text :contract_end
       t.text :image
+      t.integer :club_id
     end
   end
 end

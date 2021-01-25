@@ -1,2 +1,39 @@
-<h1>Clubs#show</h1>
-<p>Find me in app/views/clubs/show.html.erb</p>
+<h1><%= @club.name %></h1>
+
+<ul>
+  <h3>Players</h3>
+  <% @club.players.each do |p| %>
+  <li>
+    <%= link_to p.plyname, player_path(p.id) %>
+  </li>
+  <%end %>
+</ul>
+
+<ul>
+  <h3>Managers</h3>
+  <% @club.employees.each do |e| %>
+  <li>
+    <%= e.name %>
+  </li>
+  <% end %>
+</ul>
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://proj12.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>

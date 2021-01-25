@@ -1,6 +1,6 @@
 Employee.destroy_all
 # #Liverpool
-Employee.create(:name => '‎Jurgen, Klopp', :birth => 1967, :duty => 'General Manager',  :country_of_birth => 'Germany', :manager_id => 'NULL');
+Employee.create(:name => '‎Jurgen, Klopp', :birth => 1967, :duty => 'General Manager',  :country_of_birth => 'Germany');
 Employee.create(:name => '‎Peter, Krawietz', :birth => 1971, :duty => 'Assistant manager', :country_of_birth => 'Germany');
 Employee.create(:name => '‎Pepijn, Linders', :birth => 1983, :duty => 'Assistant Manager', :country_of_birth => 'Netherlands');
 Employee.create(:name => '‎John, Achterberg', :birth => 1971, :duty => 'Goalkeeper Coach', :country_of_birth => 'Netherlands');

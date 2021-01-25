@@ -1,0 +1,6 @@
+<h1> Premier League Teams</h1>
+
+<% @clubs.each do |club| %>
+<p> <%= club.name %></p>
+<p><%= link_to image_tag(club.image, :class => 'thumb', :alt => club.name), club %></p>
+<% end %>

@@ -2,17 +2,99 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+  // background-image: url(/assets/pm2.jpg);
+  color: white;
+}
 .container {
-  max-width: 75%;
+  max-width: 99%;
   margin: auto;
   border: 1px solid black;
 }
+h1{
+  color: black;
+  margin: auto;
+}
+
+
+.logo{
+  display: flex;
+  border: 1px solid black;
+}
+
+
+nav{
+  margin: 25px;
+}
 .container-inner {
-  max-width: 75%;
+  // margin-top: -80px;
+  max-width: 100%;
+  margin: auto;
   border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
+  background-image: url("/assets/top.png");
+  // color: black;
+  justify-content: space-around;
 }
+
+.outer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url("/assets/purple.png");
+}
+.left-side {
+  border: 1px solid blue;
+  width: 25%;
+}
+.middle-side{
+    margin-right: 10px;
+    border: 1px solid green;
+    width: 70%;
+}
+.right-side{
+  max-width: 75%;
+  border: 1px solid gray;
+}
+
 .thumb {
-  max-width: 100px;
+  max-width: 50px;
 }
+.names {
+  font-size: 10px;
+}
+
+.disqus_thread{
+  max-width: 75%;
+}
+
+.widgets{
+  border: 1px solid black;
+  // background: red;
+  background-image: url("/assets/purple.png");
+  color: sienna;
+  // max-width: 85%;
+  // margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.widgets > div{
+  max-width: 85%;
+}
+// .DOM_element_id_in_your_website_1611811023077 {
+//   background-image: url("/assets/purple.png");
+//   max-width: 85%;
+// }
+.players_heading{
+  border: 1px solid black;
+  background-image: url("/assets/purple.png");
+  max-width: 100%;
+  display: flex;
+  color: sienna;
+  margin: auto;
+  justify-content: center;
+}
+// .logos_ps{
+//   display: inline;
+// }

@@ -2,9 +2,60 @@
 
 <div class="container-inner">
 <% @clubs.each do |club| %>
-<p> <%= club.name %></p>
+
+
 <% if club.image.present? %>
 <p><%= link_to image_tag(club.image, :class => 'thumb', :alt => club.name), club %></p>
  <% end %>
 <% end %>
+</div>
+
+<% if @current_user.present? %>
+<p>welcome back <%= @current_user.email %></p>
+<% end %>
+
+
+
+<div class="outer">
+  <div class="left-side">
+    <p>First Teams matches coming up </p>
+
+
+  <table>
+    <tr>
+      <th>Teams </th>
+      <th>Points </th>
+      <th>Games Played </th>
+      </tr>
+
+    <% @team.each do |team| %>
+    <tr>
+        <td>
+
+        <%= team["team"] %>
+        </td>
+        <td>
+        <%= team["points"] %>
+        </td>
+        <td>
+        <%= team["played"] %>
+        </td>
+    </tr>
+
+    <% end  %>
+    </table>
+  </div>
+
+<div class="middle-side">
+  <p>First Teams learder Board </p>
+  <iframe src="https://www.scorebat.com/embed/" frameborder="0" width="600" height="760" allowfullscreen allow='autoplay; fullscreen' style="width:600px;height:760px;overflow:hidden;display:block;" class="_scorebatEmbeddedPlayer_"></iframe><script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv'; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'scorebat-jssdk'));</script>
+</div>
+
+
+
+<div class="right-side">
+  <p>First Teams match results for past week <%=  link_to 'Fixtures', players_path %></p>
+
+</div>
+
 </div>

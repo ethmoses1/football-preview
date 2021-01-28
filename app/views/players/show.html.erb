@@ -1,7 +1,7 @@
 <h1><%= @player.plyname %></h1>
 
 <% if @player.image.present? %>
-<p><%= image_tag(@player.image, :class => 'thumb', :alt => @player.plyname) %></p>
+<p><%= image_tag(@player.image, :class => 'thumb-not', :alt => @player.plyname) %></p>
  <% end %>
 
  <p>Current Team:  <%= link_to @player.club.name, club_path(@player.club.id)  %></p>

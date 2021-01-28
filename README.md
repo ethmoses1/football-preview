@@ -10,13 +10,13 @@ The club details such as the club names, players and managers are retrieved from
 The website has four models and they are clubs, players, employees(managers) and users.
 
 #### Model association
-#####Clubs and players
+##### Clubs and players
 Clubs have many players therefore, players belong to clubs
 
-#####Clubs and Managers
+##### Clubs and Managers
 Clubs have many managers therefore, managers belong to clubs
 
-#####Clubs and Users
+##### Clubs and Users
 A Club can be supported by many users and a user can support many clubs. Therefore, they have a many to many association.  
 
 ##### Through associations

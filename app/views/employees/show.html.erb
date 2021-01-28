@@ -1,2 +1,17 @@
-<h1>Employees#show</h1>
-<p>Find me in app/views/employees/show.html.erb</p>
+<h1>Manager</h1>
+<div class="info">
+<h1><%= @employee.name %></h1>
+
+<% if @employee.image.present? %>
+<p><%= image_tag(@employee.image, :class => 'thumb-not', :alt => @employee.name) %></p>
+ <% end %>
+
+ <p>Current Team:  <%= link_to @employee.club.name, club_path(@employee.club.id)  %></p>
+
+ <ul>
+   <li>Name: <%= @employee.name %></li>
+   <li>Birth Year: <%= @employee.birth %></li>
+   <li>Duty: <%= @employee.duty %></li>
+   <li>Country of Birth: <%= @employee.country_of_birth %>cm</li>
+ </ul>
+</div>

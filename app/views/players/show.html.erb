@@ -1,5 +1,6 @@
 <h1><%= @player.plyname %></h1>
 
+<div class="info">
 <% if @player.image.present? %>
 <p><%= image_tag(@player.image, :class => 'thumb-not', :alt => @player.plyname) %></p>
  <% end %>
@@ -15,3 +16,4 @@
    <li>Height: <%= @player.height %></li>
    <li>Contract Started: <%= @player.contract_start %></li>
  </ul>
+ </div>

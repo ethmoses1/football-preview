@@ -7,6 +7,7 @@ body{
   // background-image: url(/assets/pm2.jpg);
   color: white;
   font-family: 'Buenard', serif;
+  background-image: url("/assets/purple.png");
 }
 .container {
   // max-width: 100%;
@@ -139,4 +140,14 @@ table, th, td{
 }
 .players-managers{
   background-image: url("/assets/purple.png");
+}
+.players-managers-inner{
+  display: flex;
+  justify-content: space-around;
+}
+.info{
+  text-align: center;
+}
+.thumb-not{
+  max-width: 300px;
 }

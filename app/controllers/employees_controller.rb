@@ -9,5 +9,7 @@ class EmployeesController < ApplicationController
   end
 
   def show
+    @employees = Employee.all
+    @employee = Employee.find params[:id]
   end
 end

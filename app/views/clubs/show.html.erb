@@ -1,11 +1,13 @@
 <div class="players-managers">
+
 <h1><%= @club.name %></h1>
+<div class="players-managers-inner">
 
 <ul>
   <h4>Players</h4>
   <% @club.players.each do |p| %>
   <li>
-    <%= link_to p.plyname, player_path(p.id) %>
+    <%= link_to p.plyname, player_path(p.id), :style => "color: #ffffff;", :class => "scss-class" %>
   </li>
   <%end %>
 </ul>
@@ -14,10 +16,11 @@
   <h4>Managers</h4>
   <% @club.employees.each do |e| %>
   <li>
-    <%= e.name %>
+    <%= link_to e.name, employee_path(e.id), :style => "color: #ffffff;", :class => "scss-class"%>
   </li>
   <% end %>
 </ul>
+</div>
 
 <div class="disqus">
 

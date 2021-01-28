@@ -14,7 +14,7 @@ m6 = Employee.create(:name => '‎Philipp Jacobsen', :duty => 'Medical rehab and
 m7 = Employee.create(:name => '‎Andy Massey', :birth => 1960, :duty => 'Team doctor', :country_of_birth => 'England');
 
 #Arsenal
-m8 = Employee.create(:name => '‎MIKEL ARTETA', :birth => 1982, :duty => 'General Manager', :country_of_birth => 'Spain');
+m8 = Employee.create(:name => '‎MIKEL ARTETA', :birth => 1982, :duty => 'General Manager', :country_of_birth => 'Spain', :image => 'https://pbs.twimg.com/media/ETAJHSLWkAIcYFR.jpg');
 Employee.create(:name => '‎STEVE ROUND', :birth => 1970, :duty => 'Assistant Manager', :country_of_birth => 'England');
 m9 = Employee.create(:name => '‎ALBERT STUIVENBERG', :birth => 1970, :duty => 'Assistant Manager', :country_of_birth => 'Netherlands');
 m10 = Employee.create(:name => '‎INAKI CANA PAVON', :birth => 1975, :duty => 'Goalkeeper CoacH', :country_of_birth => 'Spain');

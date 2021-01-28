@@ -1,7 +1,8 @@
+<div class="players-managers">
 <h1><%= @club.name %></h1>
 
 <ul>
-  <h3>Players</h3>
+  <h4>Players</h4>
   <% @club.players.each do |p| %>
   <li>
     <%= link_to p.plyname, player_path(p.id) %>
@@ -10,7 +11,7 @@
 </ul>
 
 <ul>
-  <h3>Managers</h3>
+  <h4>Managers</h4>
   <% @club.employees.each do |e| %>
   <li>
     <%= e.name %>
@@ -18,7 +19,10 @@
   <% end %>
 </ul>
 
-<div id="disqus_thread"></div>
+<div class="disqus">
+
+
+<div id="disqus_thread">
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -37,3 +41,9 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+</div>
+
+
+</div>

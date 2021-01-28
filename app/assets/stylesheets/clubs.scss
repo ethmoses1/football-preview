@@ -1,25 +1,32 @@
 // Place all the styles related to the Clubs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import url('https://fonts.googleapis.com/css2?family=Buenard&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
 body{
   // background-image: url(/assets/pm2.jpg);
   color: white;
+  font-family: 'Buenard', serif;
 }
 .container {
-  max-width: 99%;
+  // max-width: 100%;
   margin: auto;
-  border: 1px solid black;
+  // border: 1px solid black;
+  background-image: url("/assets/top.png");
 }
 h1{
   color: black;
   margin: auto;
+  font-family: 'Kumar One', cursive;
+  // border: 1px solid black;
+  text-align: center;
+  background-image: url("/assets/top.png");
 }
 
 
 .logo{
   display: flex;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 
@@ -30,12 +37,33 @@ nav{
   // margin-top: -80px;
   max-width: 100%;
   margin: auto;
-  border: 1px solid red;
+  // border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   background-image: url("/assets/top.png");
   // color: black;
   justify-content: space-around;
+}
+table{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+tr{
+  border: 1px solid black;
+}
+
+table, th, td{
+  // border: 1px solid black;
+  border-collapse: collapse;
+
+}
+// .table-colums-rows{
+//   border: 1px solid red;
+//   margin: 5px solid black;
+//  box-shadow: 5px;
+// }
+
+.table-inner{
+  text-align: center;
 }
 
 .outer{
@@ -43,19 +71,18 @@ nav{
   flex-wrap: wrap;
   justify-content: space-around;
   background-image: url("/assets/purple.png");
+  max-height: 50%;
 }
 .left-side {
-  border: 1px solid blue;
+  margin-top: 10%;
+  // border: 1px solid blue;
   width: 25%;
+  // text-align: center;
 }
 .middle-side{
     margin-right: 10px;
-    border: 1px solid green;
+    // border: 1px solid green;
     width: 70%;
-}
-.right-side{
-  max-width: 75%;
-  border: 1px solid gray;
 }
 
 .thumb {
@@ -64,15 +91,19 @@ nav{
 .names {
   font-size: 10px;
 }
-
-.disqus_thread{
+.disqus{
   max-width: 75%;
+  margin: auto;
+  color: white;
+  // background-image: url("/assets/top.png");
+  background-color: #45103e;
 }
 
 .widgets{
   border: 1px solid black;
   // background: red;
-  background-image: url("/assets/purple.png");
+  background-size: cover;
+  background-image: url("/assets/pm.png");
   color: sienna;
   // max-width: 85%;
   // margin: auto;
@@ -98,3 +129,14 @@ nav{
 // .logos_ps{
 //   display: inline;
 // }
+.highlights{
+  // border: 1px solid red;
+  margin-right: 30%;
+}
+.middle-side-heading{
+  display: flex;
+  justify-content: flex-end;
+}
+.players-managers{
+  background-image: url("/assets/purple.png");
+}

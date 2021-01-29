@@ -151,3 +151,7 @@ table, th, td{
 .thumb-not{
   max-width: 300px;
 }
+.thumb:hover{
+  opacity: 0.4;
+  filter: alpha(opacity=30);
+}

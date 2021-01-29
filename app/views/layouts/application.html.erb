@@ -14,18 +14,18 @@
 
 
     <div class="logo">
-      <%= image_tag("/assets/flogo.png", {:style => "width: 150px"}) %>
-    <nav>
+        <%= image_tag("/assets/flogo.png", {:style => "width: 150px"}) %>
+      <nav>
 
-      <%= link_to 'Clubs', clubs_path %>
-      <% if @current_user.present? %>
-       <%= link_to 'Logout', login_path, :method => 'delete'%>
-       <% else %>
-       <%= link_to 'Sign up', new_user_path %>
-       <%= link_to 'Login', login_path %>
-      <% end %>
+        <%= link_to 'Clubs', clubs_path %>
+        <% if @current_user.present? %>
+           <%= link_to 'Logout', login_path, :method => 'delete'%>
+           <% else %>
+           <%= link_to 'Sign up', new_user_path %>
+           <%= link_to 'Login', login_path %>
+        <% end %>
 
-    </nav>
+      </nav>
     </div>
     <%= yield %>
     </div>

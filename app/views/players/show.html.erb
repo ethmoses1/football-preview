@@ -1,19 +1,19 @@
 <h1><%= @player.plyname %></h1>
 
 <div class="info">
-<% if @player.image.present? %>
-<p><%= image_tag(@player.image, :class => 'thumb-not', :alt => @player.plyname) %></p>
- <% end %>
+  <% if @player.image.present? %>
+    <p><%= image_tag(@player.image, :class => 'thumb-not', :alt => @player.plyname) %></p>
+   <% end %>
 
  <p>Current Team:  <%= link_to @player.club.name, club_path(@player.club.id)  %></p>
 
- <ul>
-   <li>Player Position: <%= @player.plyposition %></li>
-   <li>Player Number: <%= @player.plynumber %></li>
-   <li>Birth Year: <%= @player.birth %></li>
-   <li>Height: <%= @player.height %>cm</li>
-   <li>Place of Birth: <%= @player.country_of_birth %></li>
-   <li>Height: <%= @player.height %></li>
-   <li>Contract Started: <%= @player.contract_start %></li>
- </ul>
+   <ul>
+     <li>Player Position: <%= @player.plyposition %></li>
+     <li>Player Number: <%= @player.plynumber %></li>
+     <li>Birth Year: <%= @player.birth %></li>
+     <li>Height: <%= @player.height %>cm</li>
+     <li>Place of Birth: <%= @player.country_of_birth %></li>
+     <li>Height: <%= @player.height %></li>
+     <li>Contract Started: <%= @player.contract_start %></li>
+   </ul>
  </div>

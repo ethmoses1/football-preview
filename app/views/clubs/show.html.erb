@@ -1,28 +1,28 @@
 <div class="players-managers">
 
-<h1><%= @club.name %></h1>
-<div class="players-managers-inner">
+  <h1><%= @club.name %></h1>
+  <div class="players-managers-inner">
 
-<ul>
-  <h4>Players</h4>
-  <% @club.players.each do |p| %>
-  <li>
-    <%= link_to p.plyname, player_path(p.id), :style => "color: #ffffff;", :class => "scss-class" %>
-  </li>
-  <%end %>
-</ul>
+    <ul>
+      <h4>Players</h4>
+      <% @club.players.each do |p| %>
+      <li>
+        <%= link_to p.plyname, player_path(p.id), :style => "color: #ffffff;", :class => "scss-class" %>
+      </li>
+      <%end %>
+    </ul>
 
-<ul>
-  <h4>Managers</h4>
-  <% @club.employees.each do |e| %>
-  <li>
-    <%= link_to e.name, employee_path(e.id), :style => "color: #ffffff;", :class => "scss-class"%>
-  </li>
-  <% end %>
-</ul>
-</div>
+    <ul>
+      <h4>Managers</h4>
+        <% @club.employees.each do |e| %>
+      <li>
+        <%= link_to e.name, employee_path(e.id), :style => "color: #ffffff;", :class => "scss-class"%>
+      </li>
+        <% end %>
+    </ul>
+  </div>
 
-<div class="disqus">
+  <div class="disqus">
 
 
 <div id="disqus_thread">

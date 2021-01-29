@@ -3,8 +3,8 @@
 <h1><%= @employee.name %></h1>
 
 <% if @employee.image.present? %>
-<p><%= image_tag(@employee.image, :class => 'thumb-not', :alt => @employee.name) %></p>
- <% end %>
+  <p><%= image_tag(@employee.image, :class => 'thumb-not', :alt => @employee.name) %></p>
+<% end %>
 
  <p>Current Team:  <%= link_to @employee.club.name, club_path(@employee.club.id)  %></p>
 

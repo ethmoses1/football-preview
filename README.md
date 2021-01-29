@@ -2,6 +2,7 @@
 ### What is the website about?
 On this website you can get the details of the major clubs of the English Premier League. This details include club names and their logos, the clubs players and managers. Additionally you have access to the leaderboard table for the current season(2020-21) plus results of past games and fixtures for future games of the season. The final touch to the  website is the highlights for games played on the current day or the previous day. User can also interact with the website by giving comments and suggestions once they get to a specific club's page.
 
+Go to [Premier League](https://ftball-updates.herokuapp.com/clubs)
 ### Database and modles
 #### Database
 The club details such as the club names, players and managers are retrieved from a database, Whereas the leaderboard table and the fixtures and results is retrieved from an API.
